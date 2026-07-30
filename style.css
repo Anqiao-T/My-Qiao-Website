@@ -1,0 +1,12 @@
+html {font-size:10px}
+
+title{color: rgb(6, 133, 140);
+font-size :60px;
+text-align: center;}
+
+body{box-sizing: border-box;
+padding: 20px;
+border: 1px solid #ccc;
+margin:1px;}
+
+
