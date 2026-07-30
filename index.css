@@ -1,0 +1,35 @@
+html {  font-size: 10px;}
+
+head { padding:50px;}
+
+body { padding: 40px;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;}
+
+.box {
+  max-width: 400px;
+  margin: 0 ;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;}
+    
+
+textarea { width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;}
+
+button {padding: 10px 15px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;}
