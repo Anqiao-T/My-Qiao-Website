@@ -9,13 +9,13 @@ button.onclick =function() {
 oldtext=oldtext+ input.value + "<hr>"
    localStorage.setItem('all diary', oldtext);
    historydiv.innerHTML = '<p>PREVIOUSLY SAVED</p>';
+   input.value=""
 }   
 past.onclick =function() {
-   var diary= looocalStorage.getItem('all diary')
+   var diary= localStorage.getItem('all diary')
    if (diary===null){
     historydiv.innerHTML = '<p>NO PREVIOUSLY SAVED</p>';
    }else{
     historydiv.innerHTML = diary
-   }
-
+}
 }
