@@ -1,17 +1,20 @@
 html {  font-size: 10px;}
 
-head { padding:50px;}
+head { padding:50px;
+background-color: #024b04;}
 
-body { padding: 40px;
+body { 
+    padding: 100px;
   font-family: Arial, sans-serif;
-  background: #f4f4f4;}
+  background: #f4f4f4;
+}
 
 .box {
-  max-width: 400px;
-  margin: 0 ;
+  max-width: 100%;
+  margin: 15px auto ;
   background: white;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -29,7 +32,8 @@ textarea { width: 100%;
 
 button {padding: 10px 15px;
   border: none;
-  background: #4caf50;
+  background: #46b347;
   color: white;
   border-radius: 6px;
-  cursor: pointer;}
+  cursor: pointer;
+margin: 10px 0;}

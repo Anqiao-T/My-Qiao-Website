@@ -1,14 +1,21 @@
-const input = document.getElementById('diaryInput');
-const button = document.getElementById('saveBtn');
-const message = document.getElementById('message');
+var input = document.getElementById('diaryinput');
+var button = document.getElementById('SAVE');
+var past=document.getElementById('past')
+var historydiv = document.getElementById('history');
 
-button.addEventListener('click', function () {
-  localStorage.setItem('myDiary', input.value);
-  message.textContent = 'SAVED';
-});
+button.onclick =function() {
+   var oldtext =  localStorage.getItem('all diary')
+   if (oldtext===null){oldtext=""}
+oldtext=oldtext+ input.value + "<hr>"
+   localStorage.setItem('all diary', oldtext);
+   historydiv.innerHTML = '<p>PREVIOUSLY SAVED</p>';
+}   
+past.onclick =function() {
+   var diary= looocalStorage.getItem('all diary')
+   if (diary===null){
+    historydiv.innerHTML = '<p>NO PREVIOUSLY SAVED</p>';
+   }else{
+    historydiv.innerHTML = diary
+   }
 
-const savedText = localStorage.getItem('myDiary');
-if (savedText) {
-  input.value = savedText;
-  message.textContent = 'PREVIOUSLY SAVED';
 }
